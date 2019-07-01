@@ -23,7 +23,7 @@ def nancall(fun, vec, rad, num=1):
     if num == 1:
         return vec
     else:
-        return sliding1d.nancall(fun, vec, rad, num=num-1)
+        return nancall(fun, vec, rad, num=num-1)
 
 @as_nancall(_bn.move_mean)
 def nanmean(vec, rad, num=1):
