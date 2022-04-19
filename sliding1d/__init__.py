@@ -2,7 +2,7 @@ import numpy as np
 import bottleneck as _bn
 from functools import wraps as _wraps
 
-VERSION_STR = "1.0"
+VERSION_STR = "1.1.0"
 
 def as_nancall(bnfunc):
     def wrapper(func):
@@ -39,4 +39,8 @@ def nanmax(vec, rad, num=1):
 
 @as_nancall(_bn.move_std)
 def nanstd(vec, rad, num=1):
+    pass
+
+@as_nancall(_bn.move_median)
+def nanmedian(vec, rad, num=1):
     pass

@@ -1,9 +1,8 @@
 import setuptools
-from sliding1d import VERSION_STR
 
 setuptools.setup(
     name='sliding1d',
-    version=VERSION_STR,
+    version="1.1.0",
     description='1D sliding window calculation tools',
     url='https://github.com/gwappa/python-sliding1d',
     author='Keisuke Sehara',
